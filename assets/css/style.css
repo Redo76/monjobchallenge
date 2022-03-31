@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+}
+/* header bar*/
+header{
+    background-color: rgb(49, 107, 231);
+    width: 100%;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.5rem;
+<<<<<<< HEAD
+}
+.drapeaucontainer{
+    height: 100%;
+    width: 15%;
+    display: flex;
+}
+.drapeau{
+    width: 20%;
+    height: 100%;
+    cursor: pointer;
+    padding: 0.05em;
+}
+.size{
+    width: 100%;
+    height: 100%;
+=======
+>>>>>>> 1d2df29322f6fbf460c478ab0512c2a1a5d5fa8d
+}
+nav{
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+<<<<<<< HEAD
+/* end of head bar*/
+=======
+>>>>>>> 1d2df29322f6fbf460c478ab0512c2a1a5d5fa8d
+h2{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+}
+.profil{
+    background-color: rgb(192, 192, 192);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9rem;
+}
+.photo{
+    border: 2px solid black;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100%;
+    background: url(../img/panda.jpg);
+    background-size: cover;
+    background-position: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+<<<<<<< HEAD
+/* Styling the slider*/
+=======
+>>>>>>> 1d2df29322f6fbf460c478ab0512c2a1a5d5fa8d
+#carousel{
+    width: 100%;
+    max-width: 62.5rem;
+    overflow: hidden;
+    margin: auto;
+}
+#carousel figure{
+    position: relative;
+    width: 400%;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    animation: 20s slidy infinite;
+    border-radius: 1rem;
+}
+#carousel figure img{
+    width: 25%;
+    height: auto;
+    border-radius: 1rem;
+    border: 1px solid black;
+}
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: 0%; }
+}
+<<<<<<< HEAD
+/* end of slider*/
+/* styling the projects*/
+=======
+>>>>>>> 1d2df29322f6fbf460c478ab0512c2a1a5d5fa8d
+.projet_h2{
+    margin: 2% 3%;
+}
+.projet_h2::before{
+    content: '';
+    display: block;
+    width: 50%;
+    height: 0.15rem;
+    margin: auto;
+    background-color: grey ;
+}
+#projet img{
+    width: 100%;
+    height: 15rem;
+    border-radius: 0.2rem;
+}
+article{
+    position: relative; 
+}
+.overlay{
+    position: absolute;
+    color: rgb(100, 202, 228);
+    background-color: rgba(0, 0, 0, 0.493);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s;
+<<<<<<< HEAD
+=======
+}
+.overlay:hover{
+    opacity: 1;
+>>>>>>> 1d2df29322f6fbf460c478ab0512c2a1a5d5fa8d
+}
+.overlay:hover{
+    opacity: 1;
+}
+/* end of projets*/
+/* styling the form*/
+#contact{
+    padding: 1rem;
+}
+#contact h2{
+    margin-bottom: 1rem;
+}
+#contact h2::before{
+    content: '';
+    display: block;
+    width: 50%;
+    height: 0.13rem;
+    margin: auto;
+    background-color: grey ;
+}
+.container{
+    padding: 0.5rem;
+}
+.container h3{
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+form{
+    background-color: rgba(199, 198, 198, 0.993);
+    padding: 1rem 1.5rem;
+}
+label{
+    display: block;
+    padding: 0.7rem 0.7rem 0.7rem 0;
+}
+input[type=text], textarea, input[type=submit]{
+    width: 100%;
+    padding: 0.5rem;
+}
+textarea{
+    resize: none;
+}
+input[type=submit]{
+    background-color: rgb(0, 204, 0);
+    color: white;
+    border-radius: 0.2rem;
+    border: none ;
+}
+input[type=submit]:hover{
+    background-color: rgb(85, 192, 85) ;
+}
+input[type=text], textarea{
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 0.2em;
+}
+/* end of form*/
+/* footer */
+footer{
+    background-color: rgb(49, 107, 231);
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+footer div{
+    background-color: azure;
+    width: 8rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* icons*/
+i{
+    width: 1.2em;
+}
+.fa-facebook-square{
+    color: 	#4267B2;
+}
+.fa-twitter-square{
+    color:#1DA1F2;
+}
+.fa-linkedin{
+    color:#2867B2;
+}
+/* end of footer*/
+/* Setting up the responsive with media queries*/
+@media  screen and (min-width:539px) {
+    #projet img{
+        width: 14.5rem;
+    }
+    article{
+        margin: 0.5rem;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+@media  screen and (min-width:559px) {
+    #projet img{
+        width: 16rem;
+    }
+    article{
+        margin: 0.5rem;
+    }
+    nav{
+        width: 70%;
+    }
+}
+@media screen and (min-width:768px){
+    #projet img{
+        width: 20rem;
+    }
+    article{
+        margin: 1rem;
+    }
+    nav{
+        width: 50%;
+    }
+    label{
+        display: inline-block;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    .row{
+        display: flex;
+    }
+    label{
+        width: 10%;
+    }
+    input[type=submit]{
+        width:80px;
+        align-self: flex-end;
+    }
+}
+@media screen and (min-width:900px){
+    #projet img{
+        width: 25rem;
+    }
+    article{
+        margin: 1.5rem;
+    }
+    #contact{
+        padding: 3rem;
+    }
+    form{
+        padding: 1rem 1rem;
+    }
+}
+@media screen and (min-width:1340px){
+    #contact{
+        padding: 4rem;
+    }
+}
+@media screen and (min-width:1790px){
+    #projet img{
+        width: 28rem;
+    }
+}

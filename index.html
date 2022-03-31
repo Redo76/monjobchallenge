@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linking the CSS to our HTML-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Creating a Font Awesome kit-->
+    <script src="https://kit.fontawesome.com/8769df2668.js" crossorigin="anonymous"></script>
+    <!-- Setting up the normalize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Setting up the chosen fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">  
+    <title>Job challenge</title>
+</head>
+<body>
+    <!-- start of header -->
+    <header>
+        <section class="head">
+            <div class="logo">
+                <p>Prénom Nom</p>
+            </div>
+            <div class="drapeaucontainer">
+                <div class="drapeau" id="uk">
+                    <img class="size" src="./assets/img/drapeau_uk.svg.png" alt="drapeau_uk">
+                </div>
+                <div class="drapeau" id="france">
+                    <img class="size" src="./assets/img/france.svg.png" alt="drapeau_france">
+                </div>
+            </div>
+            <nav>
+                <a href="#">Accueil</a>
+                <a href="#edito">A propos</a>
+                <a href="#projet">Projets</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </section>
+        <section class="profil">
+            <div class="photo"></div>
+        </section>
+    </header>
+    <!-- end of header -->
+    <main>
+    <!-- start of main -->
+        <div id="carousel">
+            <figure>
+                <img src="./assets/img/chat_ccexpress.jpeg" alt="un chat">
+                <img src="./assets/img/chien_ccexpress.jpeg" alt="un chien">
+                <img src="./assets/img/babouin_ccexpress (1).jpeg" alt="un babouin">
+                <img src="./assets/img/phoque_ccexpress.jpeg" alt="un phoque">
+            </figure>
+        </div>
+        <!-- Grouping of projects-->
+        <section id="projet">
+            <h2 class="projet_h2">Projets</h2>
+            <div class="container">
+                <article>
+                    <div class="overlay">
+                        <h3>Premier projet</h3>
+                    </div>
+                    <img src="./assets/img/pc-programmation.jpg" alt="Premier projet">
+                </article>
+                <article class="p1">
+                    <div class="overlay">
+                        <h3>Deuxième projet</h3>
+                    </div>
+                    <img src="./assets/img/panneau_solaire.jpg" alt="Deuxième projet">
+                </article>
+                <article class="p1">
+                    <div class="overlay">
+                        <h3>Troisième projet</h3>
+                    </div>
+                        <img src="./assets/img/eolienne.jpeg" alt="Troisième projet">
+                </article>
+                <article class="p1">
+                    <div class="overlay">
+                        <h3>Quatrième projet</h3>
+                    </div>
+                        <img src="./assets/img/chantier.jpg" alt="Quatrième projet">
+                </article>
+                <article class="p1">
+                    <div class="overlay">
+                        <h3>Cinquième projet</h3>
+                    </div>
+                        <img src="./assets/img/velo.jpg" alt="Cinquième projet">
+                </article>
+                <article class="p1">
+                    <div class="overlay">
+                        <h3>Sixième projet</h3>
+                    </div>
+                        <img src="./assets/img/Schema.png" alt="Sixième projet">
+                </article>
+            </div>
+        </section>
+        <div id="contact">
+            <h2>Contact</h2>
+            <!-- Setting up the form -->
+            <form method="post" action="traitement.php">
+                    <div class="row">
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" name="prenom" id="prenom" placeholder="Votre prénom"/>
+                    </div>
+                    <br/>
+                    <div class="row">
+                    <label for="nom">Nom :</label>
+                    <input type="text" name="nom" id="nom" placeholder="Votre nom"/>
+                    </div>
+                    <br/>
+                    <div class="row">
+                    <label for="message">Message :</label>
+                    <textarea name="message" id="message" placeholder="Ecrivez votre message" cols="30" rows="10"></textarea>
+                    </div>
+                    <br/>
+                    <input type="submit">
+            </form>
+        </div>
+    <!-- end of main -->
+    </main>
+    <footer>
+    <!-- start of footer -->
+        <div>
+            <!-- Font Awesome's Icons-->
+            <i class="fa-brands fa-facebook-square fa-xl"></i>
+            <i class="fa-brands fa-twitter-square fa-xl"></i>
+            <i class="fa-brands fa-linkedin fa-xl"></i>
+        </div>
+    <!-- end of footer -->
+    </footer>
+    <!-- linking the JavaScript to our HTML-->
+    <style src="./assets/javascript/index.js"></style>
+</body>
+</html>
