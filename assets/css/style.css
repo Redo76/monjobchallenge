@@ -16,39 +16,36 @@ header{
     justify-content: space-between;
     align-items: center;
     height: 1.5rem;
-<<<<<<< HEAD
 }
 .drapeaucontainer{
     height: 100%;
     width: 15%;
     display: flex;
 }
-.drapeau{
-    width: 20%;
+.drapeaucontainer a{
+    width: 15%;
     height: 100%;
-    cursor: pointer;
+}
+.drapeau{
+    width: 100%;
+    height: 100%;
     padding: 0.05em;
 }
 .size{
     width: 100%;
     height: 100%;
-=======
->>>>>>> 1d2df29322f6fbf460c478ab0512c2a1a5d5fa8d
 }
 nav{
     width: 75%;
     display: flex;
     justify-content: space-around;
 }
-a{
+nav a{
     text-decoration: none;
     color: white;
     font-family: 'Roboto Condensed', sans-serif;
 }
-<<<<<<< HEAD
 /* end of head bar*/
-=======
->>>>>>> 1d2df29322f6fbf460c478ab0512c2a1a5d5fa8d
 h2{
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 15px;
@@ -74,10 +71,7 @@ main{
     flex-direction: column;
     background-color: aliceblue;
 }
-<<<<<<< HEAD
 /* Styling the slider*/
-=======
->>>>>>> 1d2df29322f6fbf460c478ab0512c2a1a5d5fa8d
 #carousel{
     width: 100%;
     max-width: 62.5rem;
@@ -111,11 +105,8 @@ main{
     95% { left: -300%; }
     100% { left: 0%; }
 }
-<<<<<<< HEAD
 /* end of slider*/
 /* styling the projects*/
-=======
->>>>>>> 1d2df29322f6fbf460c478ab0512c2a1a5d5fa8d
 .projet_h2{
     margin: 2% 3%;
 }
@@ -143,12 +134,6 @@ article{
     height: 100%;
     opacity: 0;
     transition: 0.5s;
-<<<<<<< HEAD
-=======
-}
-.overlay:hover{
-    opacity: 1;
->>>>>>> 1d2df29322f6fbf460c478ab0512c2a1a5d5fa8d
 }
 .overlay:hover{
     opacity: 1;
@@ -239,6 +224,9 @@ i{
     color:#2867B2;
 }
 /* end of footer*/
+.show{
+    visibility: hidden;
+}
 /* Setting up the responsive with media queries*/
 @media  screen and (min-width:539px) {
     #projet img{
