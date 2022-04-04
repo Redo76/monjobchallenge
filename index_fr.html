@@ -29,11 +29,11 @@
                     <img class="size" src="./assets/img/drapeau_uk.svg.png" alt="drapeau_uk">
                     </div>
                 </a>
-                <a href="index_fr.html" id="france">
+                <!-- <a style="display:none" href="index_fr.html" id="france">
                     <div class="drapeau">
                     <img class="size" src="./assets/img/france.svg.png" alt="drapeau_france">
                     </div>
-                </a>
+                </a> -->
             </div>
             <nav>
                 <a href="#">Accueil</a>
@@ -49,14 +49,24 @@
     <!-- end of header -->
     <main>
     <!-- start of main -->
+        <!--start of the slider-->
         <div id="carousel">
-            <figure>
-                <img src="./assets/img/chat_ccexpress.jpeg" alt="un chat">
-                <img src="./assets/img/chien_ccexpress.jpeg" alt="un chien">
-                <img src="./assets/img/babouin_ccexpress (1).jpeg" alt="un babouin">
-                <img src="./assets/img/phoque_ccexpress.jpeg" alt="un phoque">
-            </figure>
+                <div class="slide fade">
+                    <img class="chat" src="./assets/img/chat_ccexpress.jpeg" alt="un chat">
+                </div>
+                <div class="slide fade">
+                    <img class="chien" src="./assets/img/chien_ccexpress.jpeg" alt="un chien">
+                </div>
+                <div class="slide fade">
+                    <img class="babouin" src="./assets/img/babouin_ccexpress (1).jpeg" alt="un babouin">
+                </div>
+                <div class="slide fade">
+                    <img class="phoque" src="./assets/img/phoque_ccexpress.jpeg" alt="un phoque">
+                </div>
+            <a id="precedent">&#10094;</a>    
+            <a id="suivant">&#10095</a>
         </div>
+        <!-- end of the slider-->
         <!-- Grouping of projects-->
         <section id="projet">
             <h2 class="projet_h2">Projets</h2>

@@ -73,28 +73,61 @@ main{
 }
 /* Styling the slider*/
 #carousel{
-    width: 100%;
-    max-width: 62.5rem;
-    overflow: hidden;
+    max-width: 50rem;
+    position: relative;
     margin: auto;
 }
-#carousel figure{
+
+/* #carousel figure{
     position: relative;
-    width: 400%;
+    width: 100%;
     font-size: 0;
     margin: 0;
     padding: 0;
-    left: 0;
+    left: 0; 
     animation: 20s slidy infinite;
     border-radius: 1rem;
+}  */
+#carousel img{
+    max-height: 400px;
+    width: 100%;
 }
-#carousel figure img{
-    width: 25%;
-    height: auto;
-    border-radius: 1rem;
-    border: 1px solid black;
+#precedent, #suivant{
+    position: absolute;
+    padding: 1.2rem;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.13);
+    transition: 0.4s ease;
+    font-size: 1.3rem;
+    font-weight: 600;
+    user-select: none;
+    color: white;
+    top: 40%;
 }
-@keyframes slidy {
+#precedent:hover, #suivant:hover{
+    background-color: rgba(0, 0, 0, 0.685);
+}
+#precedent{
+    left: 0;
+    border-radius: 0 0.2rem 0.2rem 0;
+}
+#suivant{
+    right: 0;
+    border-radius: 0.2rem 0 0 0.2rem;
+}
+.fade{
+    animation-name: fade;
+    animation-duration: 0.5s ease;
+}
+@keyframes fade {
+    from{
+        opacity: 0.4;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/* @keyframes slidy {
     0% { left: 0%; }
     20% { left: 0%; }
     25% { left: -100%; }
@@ -104,7 +137,8 @@ main{
     75% { left: -300%; }
     95% { left: -300%; }
     100% { left: 0%; }
-}
+} */
+
 /* end of slider*/
 /* styling the projects*/
 .projet_h2{
